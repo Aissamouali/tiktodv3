@@ -49,7 +49,7 @@ def title1(): # Update the title IF option 1 was picked.
     
     while True:
         time_elapsed = strftime('%H:%M:%S', gmtime(time() - start))
-        system(f'title TIKTOD V3 ^| Views Sent: {beautify(Views)} ^| Elapsed Time: {time_elapsed}')
+sys.stdout.write("\x1b]2;tiktodv3\x07")
 
 def title2(): # Update the title IF option 2 was picked.
     global Hearts
